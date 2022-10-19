@@ -3,115 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <title>Vladyslav CV</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table>
-      <tr>
-        <td>
-          <img src="images/profile.jpg" alt="Моё Лого" height="125" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="images/profile.png" alt="Моё Лого" class="logo" />
+        <div class="info-text">
           <h1>Владислав Владинов</h1>
-          <p><em>Я программист и музыкант</em></p>
+          <p>Я программист и музыкант</p>
           <p>
             Пишу код и музыку, есть несколько альбомов в спотифае и Youtube
             канал "<strong>SalOne</strong>"
           </p>
-        </td>
-      </tr>
-    </table>
+          <h4>Мои социальные сети</h4>
+          <a
+            href="https://www.youtube.com/channel/UCGFHoZoZ839nZFurAn--FwA"
+            target="_blank"
+            >Youtube</a
+          >
+          |
+          <a href="https://www.instagram.com/vlad_salone/" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://open.spotify.com/artist/5TYsZXtgTyqowMsl6VYtw3"
+            target="_blank"
+            >Spotify</a
+          >
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-green">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Музыка</li>
+          <li>Электроника</li>
+          <li>Программирование</li>
+        </ol>
+      </div>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li>
-        <a
-          href="https://www.youtube.com/channel/UCGFHoZoZ839nZFurAn--FwA"
-          target="_blank"
-          >Youtube</a
-        >
-      </li>
-      <li>
-        <a href="https://www.instagram.com/vlad_salone/" target="_blank"
-          >Instagram</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://open.spotify.com/artist/5TYsZXtgTyqowMsl6VYtw3"
-          target="_blank"
-          >Spotify</a
-        >
-      </li>
-    </ul>
+      <div class="card bg-blue">
+        <h2>Обложки моего нового альбома</h2>
+        <p>
+          Вот предварительные варианты для обложки cделаные с помощью Dall-E 2
+        </p>
+        <div class="images">
+          <img src="images/Cover1.png" alt="Здесь моя первоя обложка" />
+          <img src="images/Cover2.png" alt="Здесь моя вторая обложка" />
+          <img src="images/Cover3.png" alt="Здесь моя третья обложка" />
+          <img src="images/Cover4.png" alt="Здесь моя четвертая обложка" />
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-red">
+        <h3>Опыт Программирования</h3>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Python</td>
+              <td>Прошел Курсы</td>
+              <td>Discord Бот</td>
+            </tr>
+            <tr>
+              <td>C#</td>
+              <td>Видео с Ютуба</td>
+              <td>Drift Arcade</td>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>Учил с Сайта</td>
+              <td>Не делал</td>
+            </tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>Часовой курс</td>
+              <td>Сайт визитка</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Музыка</li>
-      <li>Электроника</li>
-      <li>Программирование</li>
-    </ol>
+      <div class="card bg-pink">
+        <h2>Мой сервер SalMine</h2>
 
-    <hr />
+        <p><em>Небольшой сервер с друзьями в Майнкрафт</em></p>
+        <p>
+          Зайти на него можно введя в поле IP адресс
+          <strong>salmine.space</strong>
+        </p>
+      </div>
 
-    <h2>Обложка моего нового альбома</h2>
-    <img src="images/New-Cover.png" width="275" alt="Здесь моя новая обложка" />
-    <p>Сделано с помощью Dall-E 2</p>
-
-    <hr />
-
-    <h3>Опыт Программирования</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Язык</th>
-          <th>Уровень знаний</th>
-          <th>Последний проект</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Python</td>
-          <td>Прошел Курсы</td>
-          <td>Discord Бот</td>
-        </tr>
-        <tr>
-          <td>C#</td>
-          <td>Видео с Ютуба</td>
-          <td>Drift Arcade</td>
-        </tr>
-        <tr>
-          <td>C++</td>
-          <td>Учил с Сайта</td>
-          <td>Не делал</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <br />
-    <hr />
-
-    <h2>Мой сервер</h2>
-    <a href="server.html">Подробнее</a>
-
-    <hr />
-
-    <h2>Связаться со мной</h2>
-    <form action="/">
-      <label for="name">Ваше имя: </label>
-      <input type="text" id="name" placeholder="Введите имя..." />
-      <br />
-      <label for="email">Ваш Email: </label>
-      <input type="email" id="email" placeholder="Введите email..." />
-      <br />
-      <label for="text">Ваше сообщение: </label>
-      <br />
-      <textarea name="" id="text" cols="35" rows="5"></textarea>
-      <br />
-      <input type="submit" value="Связаться!" />
-    </form>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя: </label>
+              <input type="text" id="name" placeholder="Введите имя..." />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш email: </label>
+              <input type="email" id="email" placeholder="Введите email..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Ваше сообщение: </label>
+            <textarea name="" id="text" cols="35" rows="5"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Связаться!" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
