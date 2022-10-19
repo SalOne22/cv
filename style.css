@@ -143,6 +143,7 @@ a:visited {
   padding: 15px 0 10px;
   outline: none;
   font-family: inherit;
+  margin-bottom: 15px;
 }
 
 .row {
@@ -169,6 +170,7 @@ a:visited {
   color: #d6d9df;
   padding: 15px 20px;
   border: none;
+  border-radius: 15px;
   font-family: inherit;
   cursor: pointer;
 }
